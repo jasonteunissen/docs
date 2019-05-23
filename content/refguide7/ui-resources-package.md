@@ -13,6 +13,10 @@ The option to designate a custom UI resources package was added in Mendix 7.9.0.
 
 The UI resources package is a specific [module](modules) marked by a green icon in the Project Explorer, that determines the projects look and feel. It does this in two distinct ways. First, the package supplies the project with all the page documents required to create well-designed, consistent pages, such as [page templates](page-templates) and [building blocks](building-block). Second, the package contains theme information, which allows users to easily switch out themes that complement the accompanying page documents. 
 
+// How does the UI Resources Module differ from regular modules?
+// How does it determine the look and feel? isnt it just a resource library?
+// What is theme information? is there a tutorial we can link to? or is this just sass? or sass variables?
+
 Which module is set as the UI resources package is governed by the **UI resources package** setting in the **Theme** tab of the [project settings](project-settings). This setting will automatically be updated if a new UI resources package is imported. 
 
 The core concept of a UI resources package as an easily shared source of design utilities works best if the contents of the module is restricted to page templates and building blocks. Adding pages, microflows, and entities is possible and can be useful, but it also forces users to use static resources that may not be ideally suited to their specific application. Consequently, when they inevitably feel the need to tweak those resources to their requirements, the package can no longer be easily updated and maintained by the original designer.
@@ -20,6 +24,10 @@ The core concept of a UI resources package as an easily shared source of design 
 ## 2 Theme Folder
 
 When a UI resources package is imported into the project, it will automatically overwrite the project's **theme** folder with its own theme files. A **theme_old** folder will be created to back up the previous theme. This means that any classes and styles added to templates in the package can be capitalized on fully by the theme without having to worry about the styling breaking when you import the template into a new project. As long as the template or building block remains in the same UI resources package, it will look exactly the way it was designed. 
+
+// does exporting a module export SASS?
+// does exporting a ui resources module export the SASS?
+// how does import/export deal with modeler versions?
 
 Note that the replacement of the theme folder only occurs when importing a new UI resources package from an external source, such as an *.mpk* or the App Store. Selecting a different existing module as the UI resources package will not affect the theme folder.
 
