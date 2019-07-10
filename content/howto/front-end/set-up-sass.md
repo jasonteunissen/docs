@@ -5,6 +5,8 @@ menu_order: 50
 tags: ["gulp", "sass", "ux", "front end"]
 ---
 
+{{% alert type="info" %}}The Gulp file does not compile in Mendix8 beta3.{{% /alert %}}
+
 ## 1  Introduction
 
 Styling in a Mendix app project is easy to do once you get the hang of it. But before you can start using Sass for your app project, you first need to install and download a few things.
