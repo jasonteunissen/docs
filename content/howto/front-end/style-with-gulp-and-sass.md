@@ -8,7 +8,7 @@ tags: ["gulp", "sass", "ux", "front end"]
 ## 1 Introduction
 
 {{% alert type="info" %}}
-This how-to is based on the blog post [How Do I Start Styling In Mendix (Gulp & Sass)](https://medium.com/@jasonteunissen/how-do-i-start-styling-in-mendix-gulp-sass-6b37ddaf8de6) by Jason Teunissen, UX Consultant at [Appronto](https://developer.mendixcloud.com/link/partnerprofile/8870).
+This how-to is based on the blog post [How Do I Start Styling In Mendix (Gulp & Sass)](https://medium.com/@jasonteunissen/how-do-i-start-styling-in-mendix-gulp-sass-6b37ddaf8de6) by Jason Teunissen, UX Consultant.
 {{% /alert %}}
 
 For the majority of styling needs, you can use Mendix's styling tool: Calypso. For more information, see [How to Use Calypso](/howto/front-end/calypso). However, certain users who prefer Gulp may find this document useful.
